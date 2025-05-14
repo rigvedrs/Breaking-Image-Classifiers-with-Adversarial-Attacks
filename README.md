@@ -144,6 +144,28 @@ For each attack method, we visualized several examples showing:
 
 These visualizations confirm that the perturbations, especially for FGSM and PGD attacks, are nearly imperceptible to the human eye while successfully fooling the model.
 
+#### FGSM Attack Visualizations
+![FGSM Attack Example 1](images/task_2/1.png)
+![FGSM Attack Example 2](images/task_2/2.png)
+![FGSM Attack Example 3](images/task_2/3.png)
+![FGSM Attack Example 4](images/task_2/4.png)
+![FGSM Attack Example 5](images/task_2/5.png)
+
+#### PGD Attack Visualizations
+![PGD Attack Example 1](images/task_3/1.png)
+![PGD Attack Example 2](images/task_3/2.png)
+![PGD Attack Example 3](images/task_3/3.png)
+![PGD Attack Example 4](images/task_3/4.png)
+![PGD Attack Example 5](images/task_3/5.png)
+
+#### Patch Attack Visualizations
+![Patch Attack Example 1](images/task_4/1.png)
+![Patch Attack Example 2](images/task_4/2.png)
+![Patch Attack Example 3](images/task_4/3.png)
+![Patch Attack Example 4](images/task_4/4.png)
+![Patch Attack Example 5](images/task_4/5.png)
+
+
 ## Discussion
 
 ### Attack Effectiveness
@@ -172,14 +194,3 @@ This project successfully demonstrated the vulnerability of state-of-the-art ima
 
 The results underscore the importance of considering adversarial robustness when deploying deep learning systems, especially in security-critical applications. Future work could explore more sophisticated attack and defense methods, as well as theoretical explanations for the transferability phenomenon observed in our experiments.
 
-## Dependencies
-- PyTorch
-- torchvision
-- NumPy
-- Matplotlib
-- requests
-
-## References
-1. Goodfellow, I. J., Shlens, J., & Szegedy, C. (2014). Explaining and harnessing adversarial examples. arXiv preprint arXiv:1412.6572.
-2. Madry, A., Makelov, A., Schmidt, L., Tsipras, D., & Vladu, A. (2017). Towards deep learning models resistant to adversarial attacks. arXiv preprint arXiv:1706.06083.
-3. Brown, T. B., Mané, D., Roy, A., Abadi, M., & Gilmer, J. (2017). Adversarial patch. arXiv preprint arXiv:1712.09665.
