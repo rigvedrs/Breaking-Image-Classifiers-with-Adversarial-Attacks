@@ -218,42 +218,48 @@ For each attack method, we visualized several examples showing:
 
 These visualizations confirm that the perturbations, especially for FGSM and PGD attacks, are nearly imperceptible to the human eye while successfully fooling the model.
 
-#### FGSM Attack Visualizations (Untargeted)
+## FGSM Attack Visualizations (Untargeted)
 ![FGSM Attack Example 1](images/untargeted/task_2/1.png)
 ![FGSM Attack Example 2](images/untargeted/task_2/2.png)
 ![FGSM Attack Example 3](images/untargeted/task_2/3.png)
 ![FGSM Attack Example 4](images/untargeted/task_2/4.png)
 ![FGSM Attack Example 5](images/untargeted/task_2/5.png)
 
-#### PGD Attack Visualizations
-##### Untargeted
+### PGD Attack Visualizations
+### Untargeted
 ![PGD Untargeted Attack Example 1](images/untargeted/task_3/1.png)
 ![PGD Untargeted Attack Example 2](images/untargeted/task_3/2.png)
 ![PGD Untargeted Attack Example 3](images/untargeted/task_3/3.png)
 ![PGD Untargeted Attack Example 4](images/untargeted/task_3/4.png)
 ![PGD Untargeted Attack Example 5](images/untargeted/task_3/5.png)
 
-##### Targeted
+### Targeted
 ![PGD Targeted Attack Example 1](images/targeted/task_3/1.png)
 ![PGD Targeted Attack Example 2](images/targeted/task_3/2.png)
 ![PGD Targeted Attack Example 3](images/targeted/task_3/3.png)
 ![PGD Targeted Attack Example 4](images/targeted/task_3/4.png)
 ![PGD Targeted Attack Example 5](images/targeted/task_3/5.png)
 
-#### Patch Attack Visualizations
-##### Untargeted
+### Patch Attack Visualizations
+### Untargeted
 ![Patch Untargeted Attack Example 1](images/untargeted/task_4/1.png)
 ![Patch Untargeted Attack Example 2](images/untargeted/task_4/2.png)
 ![Patch Untargeted Attack Example 3](images/untargeted/task_4/3.png)
 ![Patch Untargeted Attack Example 4](images/untargeted/task_4/4.png)
 ![Patch Untargeted Attack Example 5](images/untargeted/task_4/5.png)
 
-##### Targeted
+### Targeted
 ![Patch Targeted Attack Example 1](images/targeted/task_4/1.png)
 ![Patch Targeted Attack Example 2](images/targeted/task_4/2.png)
 ![Patch Targeted Attack Example 3](images/targeted/task_4/3.png)
 ![Patch Targeted Attack Example 4](images/targeted/task_4/4.png)
 ![Patch Targeted Attack Example 5](images/targeted/task_4/5.png)
+
+## Results for the DenseNet Model:
+#### Targeted
+![Targeted DenseNet](images/targeted/task_5.png)
+#### Untargeted
+![Untargeted DenseNet](images/untargeted/task_5.png)
 
 ## Discussion
 
