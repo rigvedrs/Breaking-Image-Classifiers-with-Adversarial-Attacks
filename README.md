@@ -218,7 +218,7 @@ For each attack method, we visualized several examples showing:
 
 These visualizations confirm that the perturbations, especially for FGSM and PGD attacks, are nearly imperceptible to the human eye while successfully fooling the model.
 
-## FGSM Attack Visualizations (Untargeted)
+## FGSM Attack Visualizations 
 ![FGSM Attack Example 1](images/task_2/1.png)
 ![FGSM Attack Example 2](images/task_2/2.png)
 ![FGSM Attack Example 3](images/task_2/3.png)
