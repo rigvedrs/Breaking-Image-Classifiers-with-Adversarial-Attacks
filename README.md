@@ -207,7 +207,6 @@ new_model = torchvision.models.densenet121(weights='IMAGENET1K_V1')
 | Adv. Set 3b | Patch (Targeted) | 73.20% | 93.60% |
 
 
-![Transferability Results](images/task_5.png)
 
 ### Visualizations
 For each attack method, we visualized several examples showing:
