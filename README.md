@@ -111,7 +111,11 @@ Our implementation used:
 
 Performance after targeted PGD attack:
 - **Top-1 Accuracy: 0.00%** (100% attack success rate)
-- **Top-5 Accuracy: 72.60%** (21.6% absolute drop)
+- **Top-5 Accuracy: 72.60%**
+
+Performance after untargeted PGD attack:
+- **Top-1 Accuracy: 0.00%** (100% attack success rate)
+- **Top-5 Accuracy: 10.80%** 
 
 ### Task 4: Patch Attack
 For the patch attack, we only perturbed a small 32×32 patch of the image but allowed for a larger perturbation magnitude:
@@ -164,8 +168,12 @@ Parameters:
 - Random restarts: 2
 
 Performance after targeted patch attack:
-- **Top-1 Accuracy: 45.00%** (31.0% absolute drop)
-- **Top-5 Accuracy: 91.80%** (2.4% absolute drop)
+- **Top-1 Accuracy: 45.00%** 
+- **Top-5 Accuracy: 91.80%** 
+
+Performance after untargeted patch attack:
+- **Top-1 Accuracy: 42.00%** 
+- **Top-5 Accuracy: 75.60%** 
 
 ### Task 5: Transferability
 To evaluate transferability, we tested our adversarial examples on a different model architecture, DenseNet-121:
@@ -183,9 +191,9 @@ new_model = torchvision.models.densenet121(weights='IMAGENET1K_V1')
 |---------|--------------|----------------|----------------|
 | Original | None (Baseline) | 76.00% | 94.20% |
 | Adv. Set 1 | FGSM (Untargeted) | 6.00% | 35.40% |
-| Adv. Set 2a | PGD (Untargeted) | 0.00% | 12.00% |
+| Adv. Set 2a | PGD (Untargeted) | 0.00% | 10.80% |
 | Adv. Set 2b | PGD (Targeted) | 0.00% | 72.60% |
-| Adv. Set 3a | Patch (Untargeted) | 38.20% | 77.00% |
+| Adv. Set 3a | Patch (Untargeted) | 42.00% | 75.60% |
 | Adv. Set 3b | Patch (Targeted) | 45.00% | 91.80% |
 
 #### DenseNet-121 (Transfer Model)
@@ -193,18 +201,11 @@ new_model = torchvision.models.densenet121(weights='IMAGENET1K_V1')
 |---------|--------------|----------------|----------------|
 | Original | None (Baseline) | 74.80% | 93.60% |
 | Adv. Set 1 | FGSM (Untargeted) | 65.20% | 89.80% |
-| Adv. Set 2a | PGD (Untargeted) | 65.40% | 91.40% |
+| Adv. Set 2a | PGD (Untargeted) | 65.80% | 92.00% |
 | Adv. Set 2b | PGD (Targeted) | 70.40% | 93.00% |
-| Adv. Set 3a | Patch (Untargeted) | 70.40% | 92.00% |
+| Adv. Set 3a | Patch (Untargeted) | 72.00% | 91.40% |
 | Adv. Set 3b | Patch (Targeted) | 73.20% | 93.60% |
 
-#### Untargeted vs. Targeted Attack Comparison
-| Attack Method | Type | Top-1 Accuracy<br>(ResNet-34) | Top-5 Accuracy<br>(ResNet-34) | Top-1 Accuracy<br>(DenseNet-121) | Top-5 Accuracy<br>(DenseNet-121) |
-|--------------|------|----------------|----------------|----------------|----------------|
-| PGD | Untargeted | 0.00% | 12.00% | 65.40% | 91.40% |
-| PGD | Targeted | 0.00% | 72.60% | 70.40% | 93.00% |
-| Patch | Untargeted | 38.20% | 77.00% | 70.40% | 92.00% |
-| Patch | Targeted | 45.00% | 91.80% | 73.20% | 93.60% |
 
 ![Transferability Results](images/task_5.png)
 
@@ -303,9 +304,3 @@ The results underscore the importance of considering adversarial robustness when
 - NumPy
 - Matplotlib
 - requests
-
-## References
-1. Goodfellow, I. J., Shlens, J., & Szegedy, C. (2014). Explaining and harnessing adversarial examples. arXiv preprint arXiv:1412.6572.
-2. Madry, A., Makelov, A., Schmidt, L., Tsipras, D., & Vladu, A. (2017). Towards deep learning models resistant to adversarial attacks. arXiv preprint arXiv:1706.06083.
-3. Brown, T. B., Mané, D., Roy, A., Abadi, M., & Gilmer, J. (2017). Adversarial patch. arXiv preprint arXiv:1712.09665.
-4. Carlini, N., & Wagner, D. (2017). Towards evaluating the robustness of neural networks. In 2017 ieee symposium on security and privacy (sp).
