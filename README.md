@@ -124,16 +124,16 @@ new_model = torchvision.models.densenet121(weights='IMAGENET1K_V1')
 |---------|--------------|----------------|----------------|
 | Original | None (Baseline) | 76.00% | 94.20% |
 | Adv. Set 1 | FGSM | 6.00% | 35.40% |
-| Adv. Set 2 | PGD | 0.00% | 12.00% |
-| Adv. Set 3 | Patch | 38.20% | 77.00% |
+| Adv. Set 2 | PGD | 0.00% | 10.80% |
+| Adv. Set 3 | Patch | 42.00% | 75.60% |
 
 #### DenseNet-121 (Transfer Model)
 | Dataset | Attack Method | Top-1 Accuracy | Top-5 Accuracy |
 |---------|--------------|----------------|----------------|
 | Original | None (Baseline) | 74.80% | 93.60% |
 | Adv. Set 1 | FGSM | 65.20% | 89.80% |
-| Adv. Set 2 | PGD | 65.40% | 91.40% |
-| Adv. Set 3 | Patch | 70.40% | 92.00% |
+| Adv. Set 2 | PGD | 65.80% | 92.00% |
+| Adv. Set 3 | Patch | 72.00% | 91.40% |
 
 ### Visualizations
 For each attack method, we visualized several examples showing:
